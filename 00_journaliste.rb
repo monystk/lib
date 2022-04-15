@@ -13,12 +13,14 @@ def HandleNumber (list)
 end 
 
 
-# Quel est le handle le plus court de cette liste ? (pas reussi)
+# Quel est le handle le plus court de cette liste ? 
 
-def handleShort(list)
-    list.each do|i|
-        
-    end 
+def short(handle)
+  plusPetit = handle.min_by{|a| a.size}
+  puts "Le plus court est : #{plusPetit}"
+  gets.chomp
+end
+
 
 
 
